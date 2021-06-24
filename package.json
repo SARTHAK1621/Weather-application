@@ -1,0 +1,24 @@
+{
+  "name": "weather-application",
+  "version": "1.0.0",
+  "description": "Gives the weather details ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SARTHAK1621/Weather-application.git"
+  },
+  "keywords": [
+    "Weather",
+    "travelling",
+    "planner"
+  ],
+  "author": "Sarthak Tripathy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SARTHAK1621/Weather-application/issues"
+  },
+  "homepage": "https://github.com/SARTHAK1621/Weather-application#readme"
+}

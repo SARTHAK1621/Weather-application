@@ -1,0 +1,39 @@
+body
+{
+    background:url(FIR_ITV_RuralFireRisk_Weather_CloudySky_123RF_901534.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.heading
+{
+    display:inline;
+    position: relative;
+    left: 35%;
+    font-size: 200%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.info
+{
+    display: inline;
+    position: absolute;
+    left: 25%;
+    top: 35%;
+}
+.info input
+{
+    font-size: 200%;
+    width: 200%;
+    height: 200;
+    border: 10%;
+    border-width: 15%;
+    border-color: black;
+    margin-top: 5%;
+}
+.info button
+{
+    font-size: 250%;
+    margin-top: 5%;
+    margin-left: 70%;
+    border: 20%;
+    border-width: 20%;
+}
