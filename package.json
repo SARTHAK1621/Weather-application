@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/SARTHAK1621/Weather-application/issues"
   },
-  "homepage": "https://github.com/SARTHAK1621/Weather-application#readme"
+  "homepage": "https://github.com/SARTHAK1621/Weather-application#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0"
+  }
 }
