@@ -22,6 +22,10 @@ app.post("/input", function(req,res)
         ress.on("data", function(resh){
             //console.log(JSON.parse(resh).main.temp);
             console.log(JSON.parse(resh));
+            console.log(JSON.parse(resh).coord);
+            console.log(JSON.parse(resh).weather.main);
+            const cond=JSON.parse(resh).weather.main;
+            console.log(cond);
         });
         // The whole response has been received. Print out the result.
     });
@@ -29,7 +33,7 @@ app.post("/input", function(req,res)
     https.get(resUrl2,function(ress2){
         ress2.on("data",function(resh2)
         {
-            console.log(JSON.parse(resh2).main);
+            //console.log(JSON.parse(resh2).main.temp);
         })
     });
 
