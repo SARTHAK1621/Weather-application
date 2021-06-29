@@ -62,5 +62,5 @@ app.post("/input", function(req,res)
 
 // https://api.openweathermap.org/data/2.5/forecast?q=paris&appid=a4eb999802c63cfbfdee3872f3529cb1
 
-app.listen(process.env.PORT,function(){});
+app.listen(process.env.PORT || 3001,function(){});
 
