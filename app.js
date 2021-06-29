@@ -36,13 +36,10 @@ app.post("/input", function(req,res)
             const humidity=JSON.parse(resh).main.humidity;
             const visibility=JSON.parse(resh).visibility;
             let suggestion="";
-            if(temp>304 && temp<273)
+            console.log(temp, typeof(temp))
+            if((temp>290 || temp<273) || cond=="Rain")
             {
                 suggestion="Not advised to travell";
-            }
-            else if(cond=="Rain")
-            {
-                suggestion="It's rainy today you can't travell just sit in your house and enjoy tea and biscuit.";
             }
             else
             {
@@ -65,5 +62,5 @@ app.post("/input", function(req,res)
 
 // https://api.openweathermap.org/data/2.5/forecast?q=paris&appid=a4eb999802c63cfbfdee3872f3529cb1
 
-app.listen(3001,function(){});
+app.listen(3001||process.env.PORT,function(){});
 
