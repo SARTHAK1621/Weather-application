@@ -31,7 +31,12 @@ app.post("/input", function(req,res)
             ress.on("data", function(resh){
                 //console.log(JSON.parse(resh).main.temp);
                 console.log(JSON.parse(resh));
-                console.log(JSON.parse(resh).coord);
+                if(JSON.parse(resh).cod==404)
+                {
+                    res.render("front");
+                }
+                else{
+                    console.log(JSON.parse(resh).coord);
                 //console.log(JSON.parse(resh).weather[0].main);
                 const cond=JSON.parse(resh).weather[0].main;
                 const desc=JSON.parse(resh).weather[0].description;
@@ -53,6 +58,8 @@ app.post("/input", function(req,res)
                 }
                 console.log(suggestion);
                 res.render("result",{Name:name,Cond:cond,Desc:desc,Temp:temp,Feels:feels,Min:min_temp,Max:max_temp,Humidity:humidity,Visibility:visibility,Sugst:suggestion});
+                }
+                
             });
             // The whole response has been received. Print out the result.
         });
